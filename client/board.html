@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+    <title>Game of Thrones</title>
+  </head>
+  <body>
+    <div class="headerBoard">
+      <h1>game of thrones</h1>
+    </div>
+
+    <div  id="popup" class="popup">
+      <div id="winner" class="popupContent">
+      </div>
+    </div>
+
+    <div class="topbar">
+        <div id="displayRoll"></div>
+      <div class="topbarDice">
+        
+        <button id="roll">roll the dice!</button>
+        <button id="testBtn">test me</button>
+      </div>
+      <div id="displayTurn"></div>
+    </div>
+
+    <div class="start">
+      <p>start</p>
+    </div>
+    <div id="board-wrapper"></div>
+    <div class="finish">
+      <p>finish</p>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="src/client.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+<script src="src/script.js"></script>
+  </body>
+</html>

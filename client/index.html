@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Character Select</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Game of thrones</h1>
+      <h2 id="instructions">Select two characters to play with</h2>
+    </div>
+
+    <div  id="popup" class="popup">
+      <div id="popupInfo" class="popupContent">
+      </div>
+    </div>
+
+    <div class="characters">
+      <div class="charactersCard">
+        <div class="charactersCardImg">
+          <img src="resources/chars/1.svg" alt="Khal Drogo" />
+        </div>
+        <div class="charactersCardInfo">
+          <p>Khal Drogo</p>
+          <button onclick="getInfo(1346)">View More</button>
+          <button id="btn1" data-image="resources/chars/1.svg" data-name="Khal Drogo">Select</button>
+        </div>
+      </div>
+      <div class="charactersCard">
+        <div class="charactersCardImg">
+          <img src="resources/chars/2.svg" alt="Daenerys Targaryen" />
+        </div>
+        <div class="charactersCardInfo">
+          <p>Daenerys</p>
+          <button onclick="getInfo(271)">View More</button>
+          <button id="btn2" data-image="resources/chars/2.svg" data-name="Daenerys">Select</button>
+        </div>
+      </div>
+      <div class="charactersCard">
+        <div class="charactersCardImg">
+          <img src="resources/chars/3.svg" alt="Grey Worm" />
+        </div>
+        <div class="charactersCardInfo">
+          <p>Grey Worm</p>
+          <button onclick="getInfo(1445)">View More</button>
+          <button id="btn3" data-image="resources/chars/3.svg" data-name="Grey Worm">Select</button>
+        </div>
+      </div>
+      <div class="charactersCard">
+        <div class="charactersCardImg">
+          <img src="resources/chars/4.svg" alt="Melisandre" />
+        </div>
+        <div class="charactersCardInfo">
+          <p>Melisandre</p>
+          <button onclick="getInfo(743)">View More</button>
+          <button id="btn4" data-image="resources/chars/4.svg" data-name="Melisandre">Select</button>
+        </div>
+      </div>
+      <div class="charactersCard">
+        <div class="charactersCardImg">
+          <img src="resources/chars/5.svg" alt="Arya" />
+        </div>
+        <div class="charactersCardInfo">
+          <p>Arya</p>
+          <button onclick="getInfo(148)">View More</button>
+          <button id="btn5" data-image="resources/chars/5.svg" data-name="Arya">Select</button>
+        </div>
+      </div>
+      <div class="charactersCard">
+        <div class="charactersCardImg">
+          <img src="resources/chars/6.svg" alt="Sansa" />
+        </div>
+        <div class="charactersCardInfo">
+          <p>Sansa</p>
+          <button onclick="getInfo(957)">View More</button>
+          <button id="btn6" data-image="resources/chars/6.svg" data-name="Sansa">Select</button>
+        </div>
+      </div>
+      <div class="charactersCard">
+        <div class="charactersCardImg">
+          <img src="resources/chars/7.svg" alt="Jon Snow" />
+        </div>
+        <div class="charactersCardInfo">
+          <p>Jon Snow</p>
+          <button onclick="getInfo(583)">View More</button>
+          <button id="btn7" data-image="resources/chars/7.svg" data-name="Jon Snow">Select</button>
+        </div>
+      </div>
+      <div class="charactersCard">
+        <div class="charactersCardImg">
+          <img src="resources/chars/8.svg" alt="Little Finger" />
+        </div>
+        <div class="charactersCardInfo">
+          <p>Little Finger</p>
+          <button onclick="getInfo(823)">View More</button>
+          <button id="btn8" data-image="resources/chars/8.svg" data-name="Little Finger">Select</button>
+        </div>
+      </div>
+      <div class="charactersCard">
+        <div class="charactersCardImg">
+          <img src="resources/chars/9.svg" alt="Cercei" />
+        </div>
+        <div class="charactersCardInfo">
+          <p>Cercei</p>
+          <button onclick="getInfo(238)">View More</button>
+          <button id="btn9" data-image="resources/chars/9.svg" data-name="Cercei">Select</button>
+        </div>
+      </div>
+      <div class="charactersCard">
+        <div class="charactersCardImg">
+          <img src="resources/chars/10.svg" alt="Joffrey" />
+        </div>
+        <div class="charactersCardInfo">
+          <p>Satan</p>
+          <button onclick=getInfo(565)>View More</button>
+          <button id="btn10" data-image="resources/chars/10.svg" data-name="Satan">Select</button>
+        </div>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="src/client.js"></script>
+    <script src="src/character.js"></script>
+  </body>
+</html>
